@@ -53,7 +53,7 @@ For your first milestone, describe what your project is and how you plan to buil
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
 
-  In my first milestone, I worked with the Arduino Micro and an accelerometer as my main components to establish a reliable and accurate connection. Initially, I wired the breadboard according to the schematic shown in Figure 1. However, immediately upon attempting to retrieve data from the serial monitor, I encountered a consistent timeout message indicating an inability to establish a connection.
+  In my first milestone, I worked with the Arduino Micro and an accelerometer as my main components to establish a reliable and accurate connection. Initially, I wired the breadboard according to Figure 1 in "Schematics" below. However, immediately upon attempting to retrieve data from the serial monitor, I encountered a consistent timeout message indicating an inability to establish a connection.
 
   Further research helped us realize that the schematic I followed was intended for an Arduino Nano (figure 2), whereas I was using an Arduino Micro (figure 3). Fortunately, this was an easy fix and I compared the pinouts of the two boards, making the necessary adjustments to my wiring. The biggest issue being that certain pins overlapped, forcing me to modify certain pin numbers in my code. 
 
