@@ -47,7 +47,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Nano_Micro_Pinouts.jpeg 
+![Nano & Micro Pinouts](Nano_Micro_Pinouts.jpeg )
 
   In my first milestone, I worked with the Arduino Micro and an accelerometer as my main components to establish a reliable and accurate connection. Initially, I wired the breadboard according to Figure 1 in "Schematics" below. However, immediately upon attempting to retrieve data from the serial monitor, I encountered a consistent timeout message indicating an inability to establish a connection.
 
@@ -56,7 +56,7 @@ Nano_Micro_Pinouts.jpeg
   I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer. The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
   
 # Schematics 
-Schematic_Arduino_Micro.jpeg
+![Schematic for Arduino Micro](Schematic_Arduino_Micro.jpeg)
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
