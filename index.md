@@ -57,6 +57,7 @@ Nano_Micro_Pinouts.jpeg
   
 # Schematics 
 Schematic_Arduino_Micro.jpeg
+logo.svg 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
