@@ -55,7 +55,7 @@ For your second milestone, explain what you've worked on since your previous mil
   
 # Schematics 
 
-<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="600" height="800">
+<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="400" height="600">
 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
