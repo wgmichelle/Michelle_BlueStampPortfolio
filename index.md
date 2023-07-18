@@ -13,8 +13,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
-![Headshot](IMG_0016.jpeg)
-
+<img src="IMG_0016.jpeg" alt="Headshot" width="370" height="510">
 
 # First Milestone
 
@@ -28,7 +27,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
   I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer. The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
 
-![Headshot](IMG_0038.jpeg)
+<img src="IMG_0038.jpeg" alt="Headshot" width="370" height="515">
   
 <!---# Final Milestone
 
