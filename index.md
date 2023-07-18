@@ -13,7 +13,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
-<img src="IMG_0016.jpeg" alt="Headshot" width="370" height="510">
+<img src="IMG_0016.jpeg" alt="Headshot" width="370" height="515">
 
 # First Milestone
 
@@ -69,7 +69,7 @@ For your second milestone, explain what you've worked on since your previous mil
   
 # Schematics 
 
-<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="400" height="510">
+<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="400" height="525">
 
 # Code
 
