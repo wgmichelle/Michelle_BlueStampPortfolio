@@ -15,6 +15,8 @@ Brief Description Here
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
 <img src="IMG_0016.jpeg" alt="Headshot" width="300" height="420">
+
+& Add completed project pic
   
 <!---# Final Milestone
 
@@ -36,19 +38,14 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9yI4P5sxWMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<!--- **my second milestoen finished car
-explain parts 
-issue
-redoing wires and organization
-testing motor code
-had to add some code
-now it works
-
+<!--- 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone -->
+
+For my second milestone
 
 # First Milestone
 
