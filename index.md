@@ -65,7 +65,7 @@ For your second milestone, explain what you've worked on since your previous mil
   I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer (code provided below called "Robot Hand Gesture Code"). The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
   
 # Schematics 
-
+<!---
 <html>
 <head>
   <title>Schematics</title>
@@ -77,6 +77,10 @@ For your second milestone, explain what you've worked on since your previous mil
 
 </body>
 </html>
+-->
+
+<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="300" height="410" /> 
+<img src="Schematic_Robot_Car.jpeg" alt="Schematic for Robot Car" width="600" height="410" style="float:left"/> 
 
 # Code
 
