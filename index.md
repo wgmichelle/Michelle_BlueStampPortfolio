@@ -359,8 +359,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| MakerFocus DIY Robot Car Smart Chassis Kit | Basic pieces for the structure of the car | $17.99 | <a href="https://www.amazon.com/MakerFocus-Chassis-MEGA2560-MEGA1280-Microcontroller/dp/B01LYZDP9U"> Link </a> |
-| Soldering Iron Kit | Tools needed to safely solder | $19.99 | <a href="https://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sr_1_5?crid=JYHIJ8VXUJGP&keywords=soldering+iron+kit+plusivo&qid=1689658857&sprefix=soldering+iron+kit+plu%2Caps%2C87&sr=8-5"> Link </a> |
+| MakerFocus DIY Robot Car Smart Chassis Kit | Robot Car Structure | $17.99 | <a href="https://www.amazon.com/MakerFocus-Chassis-MEGA2560-MEGA1280-Microcontroller/dp/B01LYZDP9U"> Link </a> |
+| Soldering Iron Kit | Soldering Tools | $19.99 | <a href="https://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sr_1_5?crid=JYHIJ8VXUJGP&keywords=soldering+iron+kit+plusivo&qid=1689658857&sprefix=soldering+iron+kit+plu%2Caps%2C87&sr=8-5"> Link </a> |
 | ELEGOO UNO R3 Board | Arduino Uno | $16.99 | <a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_1_sspa?crid=3ECSRESJSZJEC&keywords=elegoo+uno+r3&qid=1689866368&sprefix=elegoo+uno%2Caps%2C88&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 | Arduino Micro with Headers | Arduino Micro | $17.99 | <a href="https://www.amazon.com/Arduino-Micro-Headers-A000053-Controller/dp/B00AFY2S56/ref=sr_1_3?crid=NGC15B4U6BJM&keywords=arduino+micro+with+headers&qid=1689866415&sprefix=arduino+micro+wit%2Caps%2C93&sr=8-3"> Link </a> |
 | 2 DSD TECH HC-05 Bluetooth Serial Pass-Through Module Wireless | Wireless connection | $9.99 | <a href="https://www.amazon.com/DSD-TECH-HC-05-Pass-through-Communication/dp/B01G9KSAF6/ref=sr_1_1_sspa?crid=35ZXFJU8T3XDX&keywords=DSD+TECH+HS-05+Bluetooth+serial+pass&qid=1689866756&sprefix=dsd+tech+hs-05+bluetooth+serial+pass%2Caps%2C85&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
