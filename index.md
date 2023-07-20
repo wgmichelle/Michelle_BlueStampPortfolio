@@ -216,6 +216,123 @@ void stopMove() {
 }
 ```
 
+Bluetooth Configuring Code
+```c++
+// sets up the Bluetooth Module for the Uno
+// This is for the Arduino Uno
+// Set up the first bluetooth module
+
+#include <SoftwareSerial.h>
+
+#define tx 7
+#define rx 8
+
+SoftwareSerial configBt(rx, tx);
+
+void setup()
+{
+  Serial.begin(38400);
+  configBt.begin(38400);
+  pinMode(tx, OUTPUT);
+  pinMode(rx, INPUT);
+}
+
+void loop()
+{
+  if (configBt.available())
+  {
+    Serial.print((char)configBt.read());
+  }
+  if (Serial.available())
+  {
+    configBt.write(Serial.read());
+  }
+}
+```
+
+Robot Car Code
+```c++
+#include <SoftwareSerial.h>
+SoftwareSerial BT_Serial(2, 3); // RX, TX
+
+#define enA 10//Enable1 L298 Pin enA 
+#define in1 9 //Motor1  L298 Pin in1 
+#define in2 8 //Motor1  L298 Pin in1 
+#define in3 7 //Motor2  L298 Pin in1 
+#define in4 6 //Motor2  L298 Pin in1 
+#define enB 5 //Enable2 L298 Pin enB 
+
+char bt_data; // variable to receive data from the serial port
+int Speed = 150; //Write The Duty Cycle 0 to 255 Enable Pins for Motor Speed  
+
+void setup() { // put your setup code here, to run once
+
+Serial.begin(38400); // start serial communication at 9600bps
+BT_Serial.begin(38400); 
+
+pinMode(enA, OUTPUT); // declare as output for L298 Pin enA 
+pinMode(in1, OUTPUT); // declare as output for L298 Pin in1 
+pinMode(in2, OUTPUT); // declare as output for L298 Pin in2 
+pinMode(in3, OUTPUT); // declare as output for L298 Pin in3   
+pinMode(in4, OUTPUT); // declare as output for L298 Pin in4 
+pinMode(enB, OUTPUT); // declare as output for L298 Pin enB 
+
+delay(200);
+}
+void loop(){
+if(BT_Serial.available() > 0){  //if some date is sent, reads it and saves in state     
+bt_data = BT_Serial.read(); 
+Serial.println(bt_data);          
+}
+  
+     if(bt_data == 'f'){forword();  Speed=180;}  // if the bt_data is 'f' the DC motor will go forward
+else if(bt_data == 'b'){backword(); Speed=180;}  // if the bt_data is 'b' the motor will Reverse
+else if(bt_data == 'l'){turnLeft(); Speed=250;}  // if the bt_data is 'l' the motor will turn left
+else if(bt_data == 'r'){turnRight();Speed=250;} // if the bt_data is 'r' the motor will turn right
+else if(bt_data == 's'){Stop(); }     // if the bt_data 's' the motor will Stop
+
+analogWrite(enA, Speed); // Write The Duty Cycle 0 to 255 Enable Pin A for Motor1 Speed 
+analogWrite(enB, Speed); // Write The Duty Cycle 0 to 255 Enable Pin B for Motor2 Speed 
+
+delay(50);
+}
+
+void forword(){  //forword
+digitalWrite(in1, HIGH); //Right Motor forword Pin 
+digitalWrite(in2, LOW);  //Right Motor backword Pin 
+digitalWrite(in3, LOW);  //Left Motor backword Pin 
+digitalWrite(in4, HIGH); //Left Motor forword Pin 
+}
+
+void backword(){ //backword
+digitalWrite(in1, LOW);  //Right Motor forword Pin 
+digitalWrite(in2, HIGH); //Right Motor backword Pin 
+digitalWrite(in3, HIGH); //Left Motor backword Pin 
+digitalWrite(in4, LOW);  //Left Motor forword Pin 
+}
+
+void turnRight(){ //turnRight
+digitalWrite(in1, LOW);  //Right Motor forword Pin 
+digitalWrite(in2, HIGH); //Right Motor backword Pin  
+digitalWrite(in3, LOW);  //Left Motor backword Pin 
+digitalWrite(in4, HIGH); //Left Motor forword Pin 
+}
+
+void turnLeft(){ //turnLeft
+digitalWrite(in1, HIGH); //Right Motor forword Pin 
+digitalWrite(in2, LOW);  //Right Motor backword Pin 
+digitalWrite(in3, HIGH); //Left Motor backword Pin 
+digitalWrite(in4, LOW);  //Left Motor forword Pin 
+}
+
+void Stop(){ //stop
+digitalWrite(in1, LOW); //Right Motor forword Pin 
+digitalWrite(in2, LOW); //Right Motor backword Pin 
+digitalWrite(in3, LOW); //Left Motor backword Pin 
+digitalWrite(in4, LOW); //Left Motor forword Pin 
+}
+```
+
 # Bill of Materials
 <!--- Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
@@ -226,6 +343,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | MakerFocus DIY Robot Car Smart Chassis Kit | Basic pieces for the structure of the car | $17.99 | <a href="https://www.amazon.com/MakerFocus-Chassis-MEGA2560-MEGA1280-Microcontroller/dp/B01LYZDP9U"> Link </a> |
 | Soldering Iron Kit | Tools needed to safely solder | $19.99 | <a href="https://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sr_1_5?crid=JYHIJ8VXUJGP&keywords=soldering+iron+kit+plusivo&qid=1689658857&sprefix=soldering+iron+kit+plu%2Caps%2C87&sr=8-5"> Link </a> |
+| Item Name | What the item is used for | $Price | <a href=""> Link </a> |
+| Item Name | What the item is used for | $Price | <a href=""> Link </a> |
 | Item Name | What the item is used for | $Price | <a href=""> Link </a> |
 
 <!--- Other Resources/Examples
