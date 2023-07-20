@@ -14,11 +14,12 @@ Brief Description Here
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
+updating image later w/ picture of me and the project
 <img src="IMG_0016.jpeg" alt="Headshot" width="300" height="420">
   
-<!---# Final Milestone
+# Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--- **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -28,6 +29,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE -->
 
+For my final milestone, I was able to control the robot car wirelessly, combining both milestones 1 and 2. ...
 
 
 # Second Milestone
@@ -43,7 +45,11 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone -->
 
-For my second milestone
+  For my second milestone, I successfully completed all the necessary wiring and additionally assembled the robot car, involving an Arduino Uno, a motor driver, a Bluetooth module, and 6 battery packs. To allow for a 9-volt power supply, I connected the battery packs in series and connected them alongside the wires on the four motors to the motor driver, following Figure 2 in the "Schematics" below.
+
+  However, during the setup, I experienced a setback when one of the batteries encountered a short circuit, causing it to pop. For safety reasons, I had to replace the entire battery pack and the motor driver as a precaution. This required me to redo all the related wiring and soldering to ensure that my wiring wouldn't cause any more issues.
+
+  Luckily, afterwards, everything seemed to be in good shape, so we were finally able to test the motors with a basic test code (provided below called "Motor Test Code) to ensure they were functioning correctly before uploading the full actual code. Following a few additional minor adjustments, the car was capable of moving in all four directions
 
 # First Milestone
 
@@ -55,7 +61,7 @@ For my second milestone
 
   Further research helped us realize that the schematic I followed was intended for an Arduino Nano (figure 1 on the left), whereas I was using an Arduino Micro (figure 2 on the right). Fortunately, this was an easy fix and I compared the pinouts of the two boards, making the necessary adjustments to my wiring. The biggest issue being that certain pins overlapped, forcing me to modify certain pin numbers in my code. 
 
-  I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer. The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
+  I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer (code provided below called "Robot Hand Gesture Code"). The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
   
 # Schematics 
 
@@ -63,6 +69,7 @@ For my second milestone
 
 # Code
 
+Robot Hand Gesture Code
 ```c++
 #include <SoftwareSerial.h>
 SoftwareSerial BT_Serial(7, 8); // RX, TX
@@ -76,8 +83,8 @@ int flag=0;
 
 void setup () {// put your setup code here, to run once
 
-Serial.begin(9600); // start serial communication at 9600bps
-BT_Serial.begin(9600); 
+Serial.begin(38400); // start serial communication at 38400bps
+BT_Serial.begin(38400); 
 
 // Initialize interface to the MPU6050
 Wire.begin();
@@ -125,6 +132,86 @@ Serial.print("\t");
 Serial.print(AcY);
 Serial.print("\t");
 Serial.println(AcZ); 
+}
+```
+
+Motor Test Code
+```c++
+const int in1 = 9;
+const int in2 = 8;
+const int in3 = 7;
+const int in4 = 6;
+const int enA = 5;
+const int enB = 10;
+
+
+void setup() {
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
+  pinMode(enA, OUTPUT);
+  pinMode(enB, OUTPUT);
+
+  digitalWrite(enA, HIGH);
+  digitalWrite(enB, HIGH);
+}
+
+void loop() {
+  moveForward();
+  delay(2000);
+  stopMove();
+  delay(500);
+
+  moveBackward();
+  delay(2000);
+  stopMove();
+  delay(500);
+
+  turnLeft();
+  delay(2000);
+  stopMove();
+  delay(500);
+
+  turnRight();
+  delay(2000);
+  stopMove();
+  delay(500);
+}
+
+void moveForward() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+}
+
+void moveBackward() {
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+}
+
+void turnRight() {
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+}
+
+void turnLeft() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+}
+
+void stopMove() {
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
 }
 ```
 
