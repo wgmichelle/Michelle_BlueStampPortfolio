@@ -32,6 +32,10 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 For my final milestone, I was able to control the robot car wirelessly, combining both milestones 1 and 2. ...
 
+after testing motors and confirming they were working
+had to configure the Bluetooth 
+upload code on both things
+it works!
 
 # Second Milestone
 
@@ -375,7 +379,6 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Amazon Basics 20-Pack AA Alkaline Batteries 1.5 Volt | Power Supply | $9.70 | <a href="https://www.amazon.com/AmazonBasics-Performance-Alkaline-Batteries-20-Pack/dp/B00NTCH52W/ref=sr_1_1_ffob_sspa?crid=29DONK02H9DWW&keywords=amazon+basics+20+pack+AA&qid=1689867800&sprefix=amazon+basics+20+pack+aa+%2Caps%2C84&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 | Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper, 30-20 AWG | Stripping Wires | $6.99 | <a href="https://www.amazon.com/Eclipse-CP-301G-ProsKit-Precision-Stripper/dp/B005JVJDIA/ref=sr_1_2?crid=281MGPHBPAVHH&keywords=eclipse+tools+cp-301g+pro%27skit+precision+wire+stripper%2C+30-20+awg&qid=1689867943&sprefix=eclipse+tools+%2Caps%2C87&sr=8-2"> Link </a> |
 | 32 In 1 Small Screwdriver Set 30 Bits | Screwdriver | $8.89| <a href="https://www.amazon.com/Small-Screwdriver-Set-Mini-Magnetic/dp/B08RYXKJW9/ref=sr_1_1_sspa?crid=PDEKV2OTFZ1W&keywords=32%2Bin%2B1%2Bsmall%2Bscrewdriver%2Bset&qid=1689868065&sprefix=32%2Bin%2B1%2Bsmall%2B%2Caps%2C91&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href=""> Link </a> |
 
 <!--- Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
