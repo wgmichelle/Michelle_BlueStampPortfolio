@@ -72,8 +72,8 @@ For your second milestone, explain what you've worked on since your previous mil
 </head>
 <body>
 
-<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="370" height="500" style="float: left; margin-right: 10px;">
-<img src="Schematic_Robot_Car.jpeg" alt="Schematic for Robot Car" width="800" height="510" style="float: left;">
+<img src="Schematic_Arduino_Micro.jpeg" alt="Schematic for Arduino Micro" width="300" height="410" style="float: left; margin-right: 10px;">
+<img src="Schematic_Robot_Car.jpeg" alt="Schematic for Robot Car" width="600" height="410" style="float: left;">
 
 </body>
 </html>
