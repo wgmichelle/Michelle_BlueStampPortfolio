@@ -84,11 +84,11 @@ For your second milestone, explain what you've worked on since your previous mil
 <img src="Schematic_Robot_Car.jpeg" alt="Schematic for Robot Car" width="600" height="410" style="float:left"/> 
 -->
 
-<img src="Schematics_1_&_2.png" alt="Schematic for Arduino Micro and Robot Car" width="1400" height="500">
+<img src="Schematics_1_&_2.png" alt="Schematic for Arduino Micro and Robot Car" width="1400" height="480">
 
 # Code
 
-Robot Hand Gesture Code
+Robot Hand Gesture Code:
 ```c++
 #include <SoftwareSerial.h>
 SoftwareSerial BT_Serial(7, 8); // RX, TX
@@ -154,7 +154,7 @@ Serial.println(AcZ);
 }
 ```
 
-Motor Test Code
+Motor Test Code:
 ```c++
 const int in1 = 9;
 const int in2 = 8;
@@ -268,7 +268,7 @@ void loop()
 }
 ```
 
-Robot Car Code
+Robot Car Code:
 ```c++
 #include <SoftwareSerial.h>
 SoftwareSerial BT_Serial(2, 3); // RX, TX
