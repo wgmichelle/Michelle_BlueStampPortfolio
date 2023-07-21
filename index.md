@@ -32,11 +32,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 For my final milestone, I was able to control the robot car wirelessly, combining both milestones 1 and 2. ...
 
-after testing motors and confirming they were working
-had to configure the Bluetooth 
-upload code on both things
-it works!
-
 # Second Milestone
 
 <!--- **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.** -->
