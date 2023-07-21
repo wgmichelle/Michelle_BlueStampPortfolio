@@ -3,10 +3,10 @@
 Brief Description Here
 
 <!--- You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions: -->
-```HTML 
+<!--- ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
-```
+<!--- ``` -->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -29,7 +29,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE -->
 
-For my final milestone, I was able to control the robot car wirelessly, combining milestones 1 and 2 
+  For my final milestone, I was able to control the robot car wirelessly, combining milestones 1 and 2. To get both parts working together, I needed to configure the Bluetooth modules (using the "Bluetooth Configuring Code" below) and set the gesture controller as the control and the robot car as the peripheral. 
 
 # Second Milestone
 
