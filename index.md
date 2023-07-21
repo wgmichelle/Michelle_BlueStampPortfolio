@@ -29,7 +29,10 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE -->
 
-  For my final milestone, I was able to control the robot car wirelessly, combining milestones 1 and 2. To get both parts working together, I needed to configure the Bluetooth modules (using the "Bluetooth Configuring Code" below) and set the gesture controller as the control and the robot car as the peripheral. 
+  For my final milestone, I achieved wireless control of the robot car by combining the functionalities of milestones 1 and 2. To integrate both parts, I configured the Bluetooth modules, using the "Bluetooth Configuring Code" below, to establish a connection between the gesture controller and the robot car. This involved setting up the gesture controller as the control device and the robot car as the peripheral. Through the serial monitor, I input commands like "AT+UART" and "AT+ROLE" to adjust baud rates, roles, and other settings.
+
+  Once the Bluetooth modules were paired, I re-uploaded the "Gesture Controller Code" and "Robot Car Code" to their respective Arduinos, removing any connecting wires in the process and connecting to their 9-volt power sources. With the successful pairing, the robot car became fully controllable through the wireless gesture controller without any physical connections.
+  
 
 # Second Milestone
 
@@ -60,7 +63,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
   Further research helped us realize that the schematic I followed was intended for an Arduino Nano (figure 1 on the left), whereas I was using an Arduino Micro (figure 2 on the right). Fortunately, this was an easy fix and I compared the pinouts of the two boards, making the necessary adjustments to my wiring. The biggest issue being that certain pins overlapped, forcing me to modify certain pin numbers in my code. 
 
-  I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer (code provided below called "Robot Hand Gesture Code"). The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
+  I encountered no further issues as I reconnected the Arduino to the power source, opened up the serial monitor once more, and was able to obtain consistent and updated values for X, Y, and Z from the accelerometer (code provided below called "Gesture Controller Code"). The X and Y values would be used to detect specific gestures (forward, backward, left, or right) and subsequently, the corresponding commands would be sent to the Bluetooth module, allowing me to be able to control the robot car in the near future.
   
 # Schematics 
 <!---
@@ -86,7 +89,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # Code
 
-Robot Hand Gesture Code:
+Gesture Controller Code:
 ```c++
 #include <SoftwareSerial.h>
 SoftwareSerial BT_Serial(7, 8); // RX, TX
@@ -232,7 +235,7 @@ void stopMove() {
 }
 ```
 
-Bluetooth Configuring Code
+Bluetooth Configuring Code from: Kebba Jammeh
 ```c++
 // sets up the Bluetooth Module for the Uno
 // This is for the Arduino Uno
