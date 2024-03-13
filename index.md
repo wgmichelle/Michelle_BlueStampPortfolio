@@ -16,7 +16,7 @@ This summer I worked to build a robotic car wirelessly controlled by the gesture
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
 <br> 
-<img src="IMG_0016.jpeg" alt="Headshot" width="300" height="420">
+<img src="headshot_robotnme.webp" alt="Headshot + Robot and Me" width="950" height="420">
   
 # Final Milestone
 
