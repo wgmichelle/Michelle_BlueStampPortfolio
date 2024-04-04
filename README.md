@@ -1,1 +1,1 @@
-This repository is a template for documenting BlueStamp Engineering projects. Users should replace this text with a description of what their project is and what their repository holds. 
+This project was during the 2023 summer period where I had worked with BlueStamp Engineering to document my work and progress as I built a gesture controlled robot car. You'll find milestones and project details, such as materials and cost, in this repository. 
